@@ -11,6 +11,8 @@ En concreto, en esta simulación se han modificado ángulo y distancia a la imag
 
 ## Problemas
 
-Un problema ha sido la dificultad de que el generador del pix2pix sea capaz de converger a un loss bajo. Esto se debe a qué el discriminador ha convergido rápidamente a un valor de pérdida cercano a 0, imposibilitando al generador engañar al discriminador. Para solventar esto, se ha añadido a la entrada del discrimador un ligero ruido que conforme avanza el aprendizaje se reduce.
+Un problema ha sido la dificultad de que el generador del pix2pix sea capaz de converger a un loss bajo. Esto se debe a qué el discriminador ha convergido rápidamente a un valor de pérdida cercano a 0, imposibilitando al generador engañar al discriminador. Para solventar esto, se ha añadido a la entrada del discrimador un ligero ruido que conforme avanza el aprendizaje se reduce. Además, se ha añadido ruido en las etiquetas(label noise) con un 5% al discriminador, junto a un suavizado. 
+Todos estos trucos los he extraído de: https://github.com/soumith/ganhacks/blob/master/README.md
+
 
 ## Resultados
