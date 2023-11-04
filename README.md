@@ -36,7 +36,7 @@ Finally, after the training on synthetic data, I recorded some real samples and 
 
 
 ## Conclusions
-At first, when I trained for a while, I didn't get good results. It seems that between the overfitting that has occurred and the little variability of background / image (I used at first only 10 images for the background and 10 for the image approximately) I have not managed to get good results. Moreover, there is a big gap between real and synthetic data. As a result, when trying it with images of the real world, the results were poor. One posible solution is the **combination of synthetic and real data pairs to the pix2pix model**.The problem is the time required to prepare the real data pairs. Another solution, would be working on loosen the gap between synthetic and real data. 
+At first, when I trained for a while, I didn't get good results. It seems that between the overfitting that has occurred and the little variability of background / image (I used at first only 10 images for the background and 10 for the image approximately) I have not managed to get good results. Moreover, there is a big gap between real and synthetic data. As a result, when trying it with real, the results were poor. One posible solution is the **combination of synthetic and real data pairs to the pix2pix model**. The problem is the time required to prepare the real data pairs. Another solution, would be working on loosen the gap between synthetic and real data. 
 
 
 
